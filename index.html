@@ -4,59 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-        #contactForm {
-          max-width: 400px;
-          margin: 0 auto;
-          background-color: #f9f9f9;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-      
-        .form-group {
-          margin-bottom: 20px;
-        }
-      
-        label {
-          display: block;
-          margin-bottom: 5px;
-          font-weight: bold;
-        }
-      
-        input[type="text"],
-        input[type="email"],
-        textarea {
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 16px;
-          box-sizing: border-box;
-        }
-      
-        textarea {
-          resize: vertical;
-        }
-      
-        button[type="submit"] {
-          background-color: #007bff;
-          color: #fff;
-          border: none;
-          border-radius: 5px;
-          padding: 10px 20px;
-          cursor: pointer;
-          font-size: 16px;
-        }
-      
-        button[type="submit"]:hover {
-          background-color: #0056b3;
-        }
-      </style>
-      
   </head>
   <body>
     <nav id="desktop-nav">
@@ -64,7 +14,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -80,19 +30,17 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
-        
       <div class="section__pic-container">
             <video class="video" autoplay loop muted style="max-width:100%; float: left;">
                 <source src="assets/Video.mp4" type="video/mp4">
             </video>
-        
       </div>
       <div class="section__text">
         <img class="circular-image" src="./assets/profilepic.png.jpg" alt="Anurag Pampati's profile picture" />
@@ -124,13 +72,7 @@
             onclick="window.open('https://github.com/anuragpampati', '_blank')"
           />
         </div>
-        <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#about'"/>
-      </div>
-      
+        
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -182,7 +124,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       <img
         src="./assets/arrow.png"
@@ -310,7 +251,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Docker </h3>
+                  <h3>Docker</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -449,7 +390,11 @@
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
+      <div>
+
+      </div>
     </section>
+    
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -490,9 +435,10 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Top</a></li>
           </ul>
         </div>
       </nav>
