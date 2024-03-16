@@ -248,34 +248,39 @@ section {
 }
 
 
-.video .desktop-video {
-  display: block;
-}
-
 .video .mobile-video {
   display: none;
 }
 
+.video .desktop-video {
+  display: block; /* Display on desktop screens by default */
+}
+
+.video .mobile-video {
+  display: none; /* Hide on mobile screens by default */
+}
+
+/* Media query for screens with a maximum width of 1368px */
 @media only screen and (max-width: 1368px) {
   .video .desktop-video {
-      display: none;
+    display: none; /* Hide on screens with a maximum width of 1368px */
   }
 
   .video .mobile-video {
-      display: block;
+    display: block; /* Display on screens with a maximum width of 1368px */
   }
 
-  .detail{
-      text-align: left;
-
+  /* Additional styles for other elements */
+  .detail {
+    text-align: left;
   }
+
   .main .social {
-  justify-content: center; 
-  width: 100%; 
+    justify-content: center; 
+    width: 100%; 
   }
-
-  
 }
+
 
 .section__text__p2 {
   font-size: 1.75rem;
