@@ -461,12 +461,22 @@
           contentType: false,
           processData: false
       }).done(function() {
-          alert('Your mail is sent!');
-      }).fail(function(error) {
-          alert('Oops... ' + JSON.stringify(error));
-      });
+        var successAlert = $('<div>').addClass('alert success-alert')
+          .html('<span class="closebtn">&times;</span>Thank you for reaching out, Your details have been sent to Anurag Pampati!');
+        $('body').append(successAlert);
+        $('.closebtn').on('click', function() {
+          $(this).parent().remove();
+        });
+    }).fail(function(error) {
+        var errorAlert = $('<div>').addClass('alert error-alert')
+          .html('<span class="closebtn">&times;</span>Oops... An error occurred: ' + JSON.stringify(error));
+        $('body').append(errorAlert);
+        $('.closebtn').on('click', function() {
+          $(this).parent().remove();
+        });
     });
   });
+});
 </script>
   </body>
 </html>
