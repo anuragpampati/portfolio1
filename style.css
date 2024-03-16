@@ -188,6 +188,41 @@ section {
 .section__text__p1 {
   text-align: center;
 }
+.video video {
+  border-radius: 50%;
+  max-width: 50%;
+  float: left;
+}
+
+
+.video .desktop-video {
+  display: block;
+}
+
+.video .mobile-video {
+  display: none;
+}
+
+@media only screen and (max-width: 1368px) {
+  .video .desktop-video {
+      display: none;
+  }
+
+  .video .mobile-video {
+      display: block;
+  }
+
+  .detail{
+      text-align: left;
+
+  }
+  .main .social {
+  justify-content: center; 
+  width: 100%; 
+  }
+
+  
+}
 
 .section__text__p2 {
   font-size: 1.75rem;
@@ -197,6 +232,11 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+}
+.circular-image {
+  border-radius: 70%; 
+  width: 150px;
+  height: 150px;
 }
 
 #socials-container {

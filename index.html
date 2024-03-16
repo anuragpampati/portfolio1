@@ -60,7 +60,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Anurag Pampati</div>
+      <div class="logo"><a href="">Anurag Pampati</a></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -87,10 +87,15 @@
       </div>
     </nav>
     <section id="profile">
+        
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+            <video class="video" autoplay loop muted style="max-width:100%; float: left;">
+                <source src="assets/Video.mp4" type="video/mp4">
+            </video>
+        
       </div>
       <div class="section__text">
+        <img class="circular-image" src="./assets/profilepic.png.jpg" alt="Anurag Pampati's profile picture" />
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Anurag Pampati</h1>
         <p class="section__text__p2">Software Developer</p>
@@ -119,7 +124,13 @@
             onclick="window.open('https://github.com/anuragpampati', '_blank')"
           />
         </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"/>
       </div>
+      
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -468,8 +479,10 @@
                     />
                   </div>
               </form>
+         
               </div>
               </div>
+              
       </section>
       
     <footer>
