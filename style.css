@@ -212,6 +212,10 @@ section {
   cursor: pointer;
   height: 2rem;
 }
+.iconl {
+  cursor: pointer;
+  height: 3rem;
+}
 
 /* BUTTONS */
 
@@ -349,6 +353,19 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-container button {
+  margin-right: 10px; 
+}
+
+.icon {
+  cursor: pointer;
+}
+
 
 .article-container {
   display: flex;
@@ -377,14 +394,15 @@ article .icon {
 }
 
 .color-container {
+  height: 50%;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 50%;
 }
 
 .project-title {
