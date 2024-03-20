@@ -457,7 +457,7 @@ section {
 }
 
 .text-container ul {
-  list-style-type: none;
+  justify-content: flex-start;
 }
 
 .text-container li {
@@ -466,7 +466,7 @@ section {
 }
 .text-container li >span{
   flex-grow: 1;
-  justify-content:center;
+  justify-content:start;
 }
 
 .text-container li:last-child {
