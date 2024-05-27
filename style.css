@@ -326,7 +326,7 @@ section {
   text-align: center;
 }
 .circular-image {
-  border-radius: 70%; 
+  border-radius: 50%;
   width: 150px;
   height: 150px;
 }
@@ -445,9 +445,8 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  height: 500px;
+  width: 500px;
 }
 
 /* EXPERIENCE SECTION */
